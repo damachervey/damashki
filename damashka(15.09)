@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int day;
+    cout << "день недели выбери (1-7): ";
+    cin >> day;
+
+    switch (day) {
+        case 1:
+            cout << "пн" << endl;
+            break;
+        case 2:
+            cout << "вт" << endl;
+            break;
+        case 3:
+            cout << "ср" << endl;
+            break;
+        case 4:
+            cout << "чт" << endl;
+            break;
+        case 5:
+            cout << "пт" << endl;
+            break;
+        case 6:
+            cout << "сб" << endl;
+            break;
+        case 7:
+            cout << "вс" << endl;
+            break;
+        default:
+            cout << "Неверный номер дня недели" << endl;
+    }
+
+    return 0;
+}
