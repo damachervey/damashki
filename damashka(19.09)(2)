@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 10;
+    int result = 1;
+
+    while (n > 0) {
+        result *= n;
+        n--;
+    }
+
+    cout << "факториал 10 будет " << result << endl;
+
+    return 0;
+}
