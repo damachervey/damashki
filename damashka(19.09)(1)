@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int base = 2;
+    int exponent = 10;
+    int result = 1;
+
+    while (exponent > 0) {
+        result *= base;
+        exponent--;
+    }
+
+    cout << "два в десятой будет " << result << endl;
+
+    return 0;
+}
