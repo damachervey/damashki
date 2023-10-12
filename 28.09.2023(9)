@@ -1,0 +1,17 @@
+#include <iostream> 
+ 
+int main() { 
+    char stroka[] = "Aaa1323#aa"; 
+    char target = 'A';  // целевая буква для поиска 
+    int count = 0;  // переменная для хранения количества вхождений 
+ 
+    for (int i = 0; i < sizeof(stroka); i++) { 
+        if (stroka[i] == target) { 
+            count++;  // увеличиваем счетчик, если символ соответствует целевой букве 
+        } 
+    } 
+ 
+    std::cout << "Количество вхождений буквы A: " << count << std::endl; 
+ 
+    return 0; 
+}
