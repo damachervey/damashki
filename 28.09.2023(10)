@@ -1,5 +1,6 @@
  #include <iostream>
 #include <cctype>
+using namespace std;
 
 int main() {
   char stroka[] = "aaaabbbbccccdddd";
@@ -7,8 +8,8 @@ int main() {
 
 for (int i = 0; i < length; i++) 
   {
-  stroka[i] = std::toupper(stroka[i]);
+  stroka[i] = toupper(stroka[i]);
   }
-  std::cout << stroka << std::endl; 
+  cout << stroka << endl; 
      return 0;
  }
