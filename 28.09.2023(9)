@@ -1,4 +1,6 @@
 #include <iostream> 
+using namespace std;
+
  
 int main() { 
     char stroka[] = "Aaa1323#aa"; 
@@ -11,7 +13,7 @@ int main() {
         } 
     } 
  
-    std::cout << "сколько A: " << count << std::endl; 
+cout << "сколько а: " << count << endl; 
  
     return 0; 
 }
