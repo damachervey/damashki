@@ -1,0 +1,55 @@
+#include <iostream>
+#include <cctype>
+using namespace std;
+
+string cesarCipher(string str, int shift){
+    string result = "";
+    
+    for(char& c : str){
+        if(isalpha(c)){
+            if(isupper(c)){
+                c = (c - 'A' + shift) % 26 + 'A';
+            }
+            else{
+                c = (c - 'a' + shift) % 26 + 'a';
+            }
+        }
+        result += c;
+    }
+    return result;
+}
+int main()
+{
+    char choise;
+    string str;
+    int shift;
+
+    while(true){
+        cout << "операцию выбери-на (e, d, q): ";
+        cin >> choise;
+        
+        if(choise == 'q'){
+            break;
+        }
+        if(choise != 'e' && choise != 'd'){
+            cout << "не верно-на" << endl;
+            continue;
+        }
+        cout << "строку введи-на: ";
+        cin >> str;
+        
+        cout << "сдвиг введи-на: ";
+        cin >> shift;
+        
+        string result;
+        
+        if(choise == 'e'){
+            result = cesarCipher(str, shift);
+        }
+        else{
+            result = cesarCipher(str, -shift);
+        }
+        cout << "результат-на: " << result << endl;
+    }
+    return 0;
+}
